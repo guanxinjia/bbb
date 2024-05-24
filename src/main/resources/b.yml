@@ -1,0 +1,33 @@
+spring:
+  servlet:
+    multipart:
+      max-request-size: 10MB
+spring:
+  application:
+    name: mbp
+spring:
+  datasource:
+    username: root
+spring:
+  datasource:
+    password: root
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/mybatislpus
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
+mybatis-plus:
+  mapper-locations: classpath*:/com/**/*.xml
+server:
+  port: 8080
+server:
+  compression:
+    mime-types: text/css
